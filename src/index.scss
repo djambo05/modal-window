@@ -33,6 +33,7 @@ body {
 
   &:hover {
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
   }
 
   &:active {
@@ -76,6 +77,34 @@ body {
 
       &:hover {
         opacity: 1;
+      }
+    }
+
+    img {
+      border-radius: 5px;
+      width: 100%;
+    }
+  }
+
+  .overlay.animated {
+    opacity: 0;
+    visibility: hidden;
+    
+    .modal {
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(-50%, -30%);
+      transition-delay: 0.2s;
+    }
+    
+    &.show {
+      opacity: 1;
+      visibility: visible;
+  
+      .modal {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, -50%);
       }
     }
   }
