@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <button className="modal-btn">Open</button>
       <div className="overlay">
-        <div>
+        <div className="modal">
           <svg></svg>
           <img />
         </div>
