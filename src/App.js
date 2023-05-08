@@ -3,7 +3,7 @@ import "./index.scss";
 function App() {
   return (
     <div className="App">
-      <button></button>
+      <button className="modal-btn">Open</button>
       <div>
         <div>
           <svg></svg>
